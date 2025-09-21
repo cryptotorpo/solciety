@@ -23,9 +23,6 @@
       function a() {
         return (0, o.jsxs)(o.Fragment, {
           children: [
-            (0, o.jsx)(r(), {
-              children: (0, o.jsx)("title", { children: "Terms & Conditions" }),
-            }),
             (0, o.jsx)("div", {
               className: "bg-[#171D23] text-white",
               children: (0, o.jsxs)("div", {

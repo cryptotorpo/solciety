@@ -560,11 +560,6 @@
                     className: "gap-[20px] flex",
                     children: [
                       (0, s.jsx)("p", { children: "\xa9 Solciety" }),
-                      (0, s.jsx)(n(), {
-                        href: "/terms",
-                        target: "_blank",
-                        children: e("footer.terms"),
-                      }),
                     ],
                   }),
                   (0, s.jsx)(i.mp, { width: 110 }),
@@ -899,53 +894,12 @@
                 }),
                 (0, s.jsxs)("div", {
                   className:
-                    "w-full md:w-[542px] md:h-[530px] relative mt-8 md:mt-[140px] px-0 md:px-0  max-md:hidden",
+                    "flex items-center justify-center text-[40px] max-md:flex-col font-bold",
                   children: [
-                    (0, s.jsx)(o(), {
-                      src: "/index/tokenomic-pie.webp",
-                      width: 542,
-                      height: 530,
-                      alt: "pie",
-                      className: "w-full md:size-full ",
-                    }),
-                    (0, s.jsx)(o(), {
-                      src: "/index/tokenomic-deco.svg",
-                      width: 386,
-                      height: 50,
-                      alt: "pie",
-                      className:
-                        "absolute w-[386px] h-auto bottom-[52px] right-[40px]",
-                    }),
-                    (0, s.jsx)("div", {
-                      className: "md:absolute md:size-full left-0 top-0",
-                      children: i.map((e, t) =>
-                        (0, s.jsxs)(
-                          "div",
-                          {
-                            className: "md:absolute ".concat(e.className),
-                            children: [
-                              (0, s.jsxs)("div", {
-                                className:
-                                  "flex items-center justify-between md:justify-start",
-                                children: [
-                                  (0, s.jsx)(c, { color: e.color }),
-                                  (0, s.jsx)("span", {
-                                    className: "text-[28px] ml-3",
-                                    children: e.label,
-                                  }),
-                                  (0, s.jsxs)("span", {
-                                    className:
-                                      "text-[24px] font-montserrat md:ml-8 font-[400]",
-                                    children: [e.percent, "%"],
-                                  }),
-                                ],
-                              }),
-                              e.line,
-                            ],
-                          },
-                          t
-                        )
-                      ),
+                    (0, s.jsxs)("p", { children: [e("token.total"), ": "] }),
+                    (0, s.jsx)("p", {
+                      className: "text-secondary md:ml-4",
+                      children: "1,000,000,000",
                     }),
                   ],
                 }),
@@ -953,10 +907,32 @@
                   className:
                     "flex items-center justify-center text-[40px] max-md:flex-col font-bold",
                   children: [
-                    (0, s.jsxs)("p", { children: [e("token.total"), ": "] }),
+                    (0, s.jsxs)("p", { children: ["TAX", ": "] }),
                     (0, s.jsx)("p", {
                       className: "text-secondary md:ml-4",
-                      children: "10,000,000,000",
+                      children: "0/0",
+                    }),
+                  ],
+                }),
+                (0, s.jsxs)("div", {
+                  className:
+                    "flex items-center justify-center text-[40px] max-md:flex-col font-bold",
+                  children: [
+                    (0, s.jsxs)("p", { children: ["LP", ": "] }),
+                    (0, s.jsx)("p", {
+                      className: "text-secondary md:ml-4",
+                      children: "Locked",
+                    }),
+                  ],
+                }),
+                (0, s.jsxs)("div", {
+                  className:
+                    "flex items-center justify-center text-[40px] max-md:flex-col font-bold",
+                  children: [
+                    (0, s.jsxs)("p", { children: ["Ownership", ": "] }),
+                    (0, s.jsx)("p", {
+                      className: "text-secondary md:ml-4",
+                      children: "Renounced",
                     }),
                   ],
                 }),
